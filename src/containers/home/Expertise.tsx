@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 const cardData = [
   // Your card data objects
   {
@@ -55,9 +56,13 @@ const Expertise = () => {
           </div>
         ))}
       </div>
-      <div className="flex">
-        <div onClick={() => handlePageChange(1)}>1</div>
-        <div onClick={() => handlePageChange(2)}>2</div>
+      <div className="flex justify-center gap-4">
+        <div onClick={() => handlePageChange(1)}>
+          <AiOutlineArrowLeft />
+        </div>
+        <div onClick={() => handlePageChange(2)}>
+          <AiOutlineArrowRight />
+        </div>
       </div>
     </div>
   );
