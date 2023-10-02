@@ -47,7 +47,7 @@ const Expertise = () => {
   };
   return (
     <div>
-      <div className="px-40 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11  text-center">
+      <div className="px-28 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11  text-center">
         {visibleCards.map((card, index) => (
           <div className="border-2 border-bc rounded-lg p-6">
             <div className="bg-gray  h-64 rounded-lg "></div>

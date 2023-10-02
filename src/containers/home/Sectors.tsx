@@ -30,7 +30,7 @@ const Sectors = () => {
   return (
     <div className=" mt-20 ">
       <h1 className="font-bold text-5xl leading-tight text-center">Sectors</h1>
-      <div className="px-40 py-12 font-bold text-lg flex justify-center flex-wrap gap-x-32 gap-y-12">
+      <div className="px-28 py-12 font-bold text-lg flex justify-center flex-wrap gap-x-32 gap-y-12">
         {/* flex ka direction badal denge agar tab justify content y pr kaam krega or allin items x par kaam krega */}
         {sectorData.map((card, index) => (
           <div className="flex flex-col items-center">

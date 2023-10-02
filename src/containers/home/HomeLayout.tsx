@@ -2,27 +2,15 @@ import Expertise from "./Expertise";
 import Form from "./Form";
 import Sectors from "./Sectors";
 import WhyUs from "./WhyUs";
-
+import Header from "@/components/common/Header";
 export const HomeLayout: React.FC = () => {
   return (
     <>
-      <div className=" py-8 font-inter">
+      <div className="px-12 py-8 font-inter">
         {/* Header */}
-        <div className=" px-12 flex justify-between font-bold text-xl ">
-          <div className="bg-gray px-12 py-2">LOGO</div>
-          <div className="flex justify-between gap-7 items-center ">
-            <div>About</div>
-            <div>People</div>
-            <div>Expertise</div>
-            <div>Blogs</div>
-            <div className="shrink">Thought Leadership</div>
-            <div>Career</div>
-          </div>
-          <div className="bg-gray px-2 py-2">Contact Us</div>
-        </div>
-
+        <Header />
         {/* body */}
-        <div className="mt-8 px-12">
+        <div className="mt-8 ">
           <div className="h-h90 bg-gray  flex  justify-center items-center ">
             <div className="w-3/5 text-center">
               <h1 className="text-3xl font-bold">Highlights</h1>
@@ -35,7 +23,7 @@ export const HomeLayout: React.FC = () => {
         </div>
 
         {/* About */}
-        <div className="  mt-24 px-40 flex justify-center flex-wrap font-bold text-xl gap-16 ">
+        <div className="  mt-24 px-28 flex justify-center flex-wrap font-bold text-xl gap-16 ">
           <div className="bg-gray w-box h-box flex justify-center items-center ">
             <h1 className="font-semibold text-lg ">Law firm image</h1>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
   return (
-    <div className="mt-20 px-40 flex flex-row flex-wrap  gap-12 text-left">
+    <div className="mt-20 px-28 flex flex-row flex-wrap  gap-12 text-left">
       <div className="w-fw">
         <h1 className="font-bold text-5xl leading-tight text-left">
           Seeking Legal Assistance? Contact Us

@@ -23,7 +23,7 @@ const WhyUs = () => {
         Why Choose us to Handle your case?
       </h1>
 
-      <div className=" pl-40 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap--x-24  text-center">
+      <div className=" pl-28 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap--x-24  text-center">
         {cardData.map((card, index) => (
           <div className="w-80 mt-5">
             <div className="bg-gray h-64"></div>
