@@ -1,53 +1,52 @@
 import React from "react";
 import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 
 const cardData = [
   // Your card data objects
   {
-    title: "Expertise in Your Industry",
+    title: "Legal Expertise",
     content:
-      "We prioritize unwavering integrity and ethical conduct in all our interactions, establishing trust at the core of our practice.",
+      "Our attorneys are experts in their respective fields of law, possessing in-depth knowledge and experience.",
   },
   {
-    title: "Innovative Solutions",
+    title: "Strategic Advocacy",
     content:
-      "We are committed to delivering creative and forward-thinking legal solutions, tailored to address each client's unique challenges.",
+      "Our attorneys are skilled in developing innovative legal strategies tailored to each case, ensuring the best possible outcome for our clients",
   },
   {
-    title: "Client-Centric Approach",
+    title: "Proven Results",
     content:
-      "Our clients are our focus, and we strive to understand and meet their specific needs, fostering collaborative, long-term relationships built on mutual respect.",
+      "With a consistent track record of successful legal resolutions, our attorneys have earned a reputation for excellence and reliability in the legal field.",
   },
 ];
 
 const PeopleLayout = () => {
   return (
     <>
-      <div className="px-12">
+      <div className="px-12 font-inter">
         <Header />
         {/* Main Content */}
-        <div className="mt-10  h-h90">
-          <div className="bg-gray   flex pl-24 items-center">
-            <h1 className="font-bold text-aboutBanner leading-aboutBanner">
+        <div className="mt-6 bg-gray flex items-center h-h90">
+          <div className="flex pl-24">
+            <h1 className="font-bold text-5xl leading-aboutBanner">
               Only Qualified Attorney’s
             </h1>
           </div>
         </div>
 
-        {/* Mission */}
-
         {/* Values */}
-        <div>
-          <h1 className="mt-40 text-center text-5xl font-bold ">
+        <div className="">
+          <h1 className="mt-20 text-center text-5xl font-bold ">
             Why our Attorney’s Stand out?
           </h1>
-          <div className="mt-20 flex flex-wrap  gap-12 items-center">
+          <div className="pl-8 lg:pl-36 mt-20 flex flex-wrap justify-between gap-4 ">
             {cardData.map((card, index) => (
-              <div className="flex flex-col gap-12 ">
+              <div className="flex flex-col w-52 ">
                 <div className="w-24 h-20 bg-gray"></div>
-                <div className=" w-80 md:w-w556 flex flex-col  gap-2">
+                <div className=" flex flex-col  gap-2">
                   <h1 className="text-2xl font-extrabold">{card.title}</h1>
-                  <p className="text-lg font-normal leading-5 ">
+                  <p className="text-lg font-normal leading-5">
                     {card.content}
                   </p>
                 </div>
@@ -58,82 +57,96 @@ const PeopleLayout = () => {
         </div>
       </div>
 
-      <div className="mt-40 bg-lightGray">
-        <h1 className="mt-40 text-left text-5xl font-bold ">
+      <div className="mt-32 bg-lightGray px-48">
+        <h1 className="pt-28 pb-32 text-left text-5xl font-bold ">
           Meet the Attorney’s
         </h1>
 
-        <div className="flex flex-col md:flex-row mb-20">
-          <div className="basis-full md:basis-1/2 lg:basis-1/3 bg-gray  flex items-center justify-center">
-            <h1 className="font-semibold text-2xl ">image</h1>
-            {/* <img src="" alt="" /> */}
+        <div className="flex flex-col lg:flex-row justify-between mb-20">
+          <div className="lg:basis-2/5 bg-gray flex flex-col items-center justify-end relative">
+            <h1 className="font-semibold text-2xl absolute top-1/2 ">image</h1>
+            <div className="absolute w-4/5  px-12 py-4 bottom-0 transform translate-y-1/2 bg-white ">
+              <h1 className="text-2xl  font-extrabold ">Ravi Vaswani</h1>
+              <p className="text-lg font-normal pt-3 leading-5">
+                Founding Partner, General Corporate Advisory
+              </p>
+            </div>
           </div>
-          <div className=" basis-full md:basis-1/2 lg:basis-2/3 px-16 lg:px-44 py-16 lg:py-36">
-            <h1 className="text-5xl font-bold ">
-              Putting You First:
-              <br /> Our Focus on Clients
-            </h1>
+
+          <div className="  lg:basis-2/5 lg:py-36">
             <p className="font-normal text-lg mt-6 leading-6">
-              We prioritize understanding our clients' unique business needs,
-              allowing us to deliver tailored legal solutions that drive
-              success. Our commitment to fostering lasting relationships is what
-              sets us apart.
+              Ravi Vaswani, Founding Partner, is a seasoned legal expert with
+              over 11 years of experience, specializing in high-stakes strategic
+              and commercial matters across diverse industries.
             </p>
+            <p className="text-lg font-bold">Know more</p>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row mb-20">
-          <div className=" basis-full md:basis-1/2 lg:basis-2/3 px-16 lg:px-44 py-16 lg:py-36">
-            <h1 className="text-5xl font-bold ">Global Reach</h1>
+        <div className="flex flex-col lg:flex-row justify-between mb-20">
+          <div className="  lg:basis-2/5 lg:py-36">
             <p className="font-normal text-lg mt-6 leading-6">
-              With offices in New Delhi, Mumbai, Bengaluru, and Bhopal, we serve
-              clients not only in India but also across the globe. Our
-              international presence allows us to provide seamless legal support
-              in diverse jurisdictions.
+              He brings over a decade of diverse legal expertise, specializing
+              in pre-litigation strategy, commercial contracts, and
+              transactional aspects of financial instruments.
             </p>
+            <p className="text-lg font-bold">Know more</p>
           </div>
-          <div className="basis-full md:basis-1/2 lg:basis-1/3 bg-gray   flex items-center justify-center">
-            <h1 className="font-semibold text-2xl ">image</h1>
-            {/* <img src="" alt="" /> */}
+          <div className="lg:basis-2/5 bg-gray flex flex-col items-center justify-end relative">
+            <h1 className="font-semibold text-2xl absolute top-1/2 ">image</h1>
+            <div className="absolute w-4/5  px-12 py-4 bottom-0 transform translate-y-1/2 bg-white ">
+              <h1 className="text-2xl  font-extrabold ">Ashish Mukhi</h1>
+              <p className="text-lg font-normal pt-3 leading-5">
+                Partner, Dispute Resolution
+              </p>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row mb-20">
-          <div className="basis-full md:basis-1/2 lg:basis-1/3 bg-gray  flex items-center justify-center">
-            <h1 className="font-semibold text-2xl ">image</h1>
-            {/* <img src="" alt="" /> */}
+        <div className="flex flex-col lg:flex-row justify-between mb-20">
+          <div className="lg:basis-2/5 bg-gray flex flex-col items-center justify-end relative">
+            <h1 className="font-semibold text-2xl absolute top-1/2 ">image</h1>
+            <div className="absolute w-4/5  px-12 py-4 bottom-0 transform translate-y-1/2 bg-white ">
+              <h1 className="text-2xl  font-extrabold ">Utkarsh Sharma</h1>
+              <p className="text-lg font-normal pt-3 leading-5">
+              Partner, Dispute Resolution
+              </p>
+            </div>
           </div>
-          <div className=" basis-full md:basis-1/2 lg:basis-2/3 px-16 lg:px-44 py-16 lg:py-36">
-            <h1 className="text-5xl font-bold ">Community Engagement</h1>
+
+          <div className="  lg:basis-2/5 lg:py-36">
             <p className="font-normal text-lg mt-6 leading-6">
-              Beyond legal expertise, we're dedicated to making a positive
-              impact in the communities we serve. Our pro bono initiatives and
-              community involvement reflect our commitment to social
-              responsibility.
+              Utkarsh Sharma, Partner in Dispute Resolution, specializes in
+              high-value commercial litigation, regulatory matters, and
+              white-collar crimes, with extensive experience in representing
+              clients before top Indian courts and advising on complex
+              investigations.
             </p>
+            <p className="text-lg font-bold">Know more</p>
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row mb-20">
-          <div className=" basis-full md:basis-1/2 lg:basis-2/3 px-16 lg:px-44 py-16 lg:py-36">
-            <h1 className="text-5xl font-bold ">Industry Focus</h1>
+        <div className="flex flex-col lg:flex-row justify-between pb-80 ">
+          <div className="  lg:basis-2/5 lg:py-36">
             <p className="font-normal text-lg mt-6 leading-6">
-              From Consumer Durables to Cryptocurrency, we have a deep
-              understanding of various sectors. This specialized knowledge
-              enables us to offer insightful legal advice that aligns with
-              industry-specific challenges and opportunities.
-            </p>
+            Rahul Agarwal, as the head of corporate secretarial practice at Zentrum Law, leverages over seven years of expertise in governance, compliances, and corporate affairs, providing strategic advice on cap tables, due diligence, fundraising, corporate governance, compliance, and liquidation, among other areas.
+             </p>
+            <p className="text-lg font-bold">Know more</p>
           </div>
-          <div className="basis-full md:basis-1/2 lg:basis-1/3 bg-gray  flex items-center justify-center">
-            <h1 className="font-semibold text-2xl ">image</h1>
-            {/* <img src="" alt="" /> */}
+          <div className="lg:basis-2/5 bg-gray flex flex-col items-center justify-end relative">
+            <h1 className="font-semibold text-2xl absolute top-1/2 ">image</h1>
+            <div className="absolute w-4/5  px-12 py-4 bottom-0 transform translate-y-1/2 bg-white ">
+              <h1 className="text-2xl  font-extrabold ">Rahul Agarwal</h1>
+              <p className="text-lg font-normal pt-3 leading-5">
+              Partner, General Corporate Advisory
+              </p>
+            </div>
           </div>
         </div>
       </div>
+
       {/* footer */}
-      <div className="h-56 mt-40 bg-gray">
-        <h1 className="font-semibold text-lg">FOOTER</h1>
-      </div>
+    <Footer/>
     </>
   );
 };

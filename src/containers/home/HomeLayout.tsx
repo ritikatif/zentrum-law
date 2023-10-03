@@ -3,6 +3,7 @@ import Form from "./Form";
 import Sectors from "./Sectors";
 import WhyUs from "./WhyUs";
 import Header from "@/components/common/Header";
+import Footer from "@/components/common/Footer";
 export const HomeLayout: React.FC = () => {
   return (
     <>
@@ -74,9 +75,7 @@ export const HomeLayout: React.FC = () => {
       {/* form */}
       <Form />
       {/* footer */}
-      <div className="h-56 mt-40 bg-gray">
-        <h1 className="font-semibold text-lg">FOOTER</h1>
-      </div>
+      <Footer />
     </>
   );
 };

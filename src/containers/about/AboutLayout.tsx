@@ -1,3 +1,4 @@
+import Footer from "@/components/common/Footer";
 import Header from "@/components/common/Header";
 import React from "react";
 const cardData = [
@@ -21,7 +22,7 @@ const cardData = [
 const AboutLayout = () => {
   return (
     <>
-      <div className="px-12">
+      <div className="px-12 font-inter">
         <Header />
         {/* Main Content */}
         <div className="mt-10 flex-col md:flex-row flex flex-wrap h-h90">
@@ -151,9 +152,7 @@ const AboutLayout = () => {
         </div>
       </div>
       {/* footer */}
-      <div className="h-56 mt-40 bg-gray">
-        <h1 className="font-semibold text-lg">FOOTER</h1>
-      </div>
+      <Footer />
     </>
   );
 };
